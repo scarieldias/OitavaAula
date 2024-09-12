@@ -1,9 +1,9 @@
-# Imprime nome do meio
+# Imprime sobrenome
 
-nome = "Alessandro Scariel Dias"
-tamanho = len(nome)
+nome = input("Digite seu nome.: ")
+sobrenome = nome.split()
 
-print(nome[11:18])
-
-print ("O numero de elementos do nome é .: " , tamanho)
-print ("A nova saida é .: " , nome.split())
+if len(sobrenome) > 1:
+    print("O sobrenome digitado é .: " , sobrenome[-1])
+else:
+    print("Não foi digitado nome com sobrenomes")
